@@ -52,27 +52,31 @@ border-spacing: 0;
 a{
 text-decoration: none;
 }
-h1{
-    position: fixed;
-    top: 30px; left: 50px;
-    z-index: 99;
-    cursor: pointer;
-}
 .mainWrapper{
     width: 100%;
 }
-.mainNav{
+.headBar{
+    width: 100%;
+    background: #1b1b1b;
+    height:35px;
+    border-bottom: 1px solid rgba(235,235,235,0.1);
+}
+header{
     width:100%;
-    margin: 0 auto;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+.mainNav{
+    width:70%;
     background: #1b1b1b;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80px;
     border-bottom: none;
-    position: fixed;
-    left:50%;top: 0;
-    transform: translateX(-50%);
     z-index: 98;
 }
 .mainNav li{
@@ -85,6 +89,10 @@ h1{
 }
 .mainNav li.clicked{
     opacity: 1;
+}
+header button{
+    height: 30px;
+    width: 30px;
 }
 .MainContents{
     width: 100%;

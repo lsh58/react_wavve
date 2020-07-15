@@ -1,5 +1,6 @@
 import React, {useState, useRef} from 'react';
 import Wrapper from './components/Wrapper';
+import HeadBar from './components/HeadBar';
 import NavWrapper from './components/NavWrapper';
 import MainContents from './components/MainContents';
 import MainNav from './components/MainNav';
@@ -35,9 +36,12 @@ const WavveMain = () => {
  
     return (
         <Wrapper>
+         <HeadBar></HeadBar>
          <NavWrapper>
-            <h1><img src={logo} alt="nike logo" onClick={toMain}></img></h1>
+            <h1><img src={logo} alt="logo" onClick={toMain}></img></h1>
             <MainNav mainEl={mainEl} onMouseEnter={onenter} onClick={onclick}/>
+            <button className="search"></button>
+            <button className="category"></button>
          </NavWrapper>
          <MainContents page={page}/>
         </Wrapper>

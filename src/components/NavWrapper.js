@@ -1,11 +1,11 @@
 import React from 'react';
 
-function NavWrapper({children, onMouseLeave}){
+function NavWrapper({children}){
   
     return (
-      <div className="navWrapper" onMouseLeave={onMouseLeave}>
+      <header>
         {children}
-      </div>
+      </header>
     );
 };
 
