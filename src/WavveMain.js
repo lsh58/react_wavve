@@ -1,20 +1,20 @@
 import React, {useState, useRef} from 'react';
 import Wrapper from './components/Wrapper';
-import HeadBar from './components/HeadBar';
-import NavWrapper from './components/NavWrapper';
 import MainContents from './components/MainContents';
 import MainNav from './components/MainNav';
-import logo from './logo.png';
-import './WavveMain.css';
+import './asset/common.css';
+import './asset/WavveMain.css';
+
 
 const WavveMain = () => {
 
-    const [page, setPage] = useState('main');
+    const [page, setPage] = useState('01');
  
     const mainEl = useRef(null);
  
-    const onenter = e => {
-       var num = e.target.id.slice(-1)-1;
+    const onclick = e => {
+       setPage(e.target.dataset.num);
+       var num = e.target.dataset.num.slice(-1)-1;
        for(var i =0; i<mainEl.current.children.length; i++){
           mainEl.current.children[i].classList.remove("clicked")
           if(i===num){
@@ -22,29 +22,12 @@ const WavveMain = () => {
           }
        }
     }
- 
-    const onclick = e => {
-       setPage(e.target.innerText);
-    }
     
-    const toMain = () => {
-       setPage('main');
-       for(var i =0; i<mainEl.current.children.length; i++){
-          mainEl.current.children[i].classList.remove("clicked");
-       }
-    }
- 
     return (
-        <Wrapper>
-         <HeadBar></HeadBar>
-         <NavWrapper>
-            <h1><img src={logo} alt="logo" onClick={toMain}></img></h1>
-            <MainNav mainEl={mainEl} onMouseEnter={onenter} onClick={onclick}/>
-            <button className="search"></button>
-            <button className="category"></button>
-         </NavWrapper>
+      <Wrapper>
+         <MainNav mainEl={mainEl} onClick={onclick}/>
          <MainContents page={page}/>
-        </Wrapper>
+      </Wrapper>
     );
 };
 

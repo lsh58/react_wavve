@@ -1,0 +1,118 @@
+.mainWrapper{
+    width: 100%;
+}
+header{
+    width:100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+}
+.headBar{
+    width: 100%;
+    background: #1b1b1b;
+    border-bottom: 1px solid rgba(235,235,235,0.1);
+}
+.headBar ul{
+    height: 33px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 140px;
+}
+.headBar ul li{
+    color: #a5a5a5;
+    font-size:12px;
+    padding: 0 11px;
+    cursor: pointer;
+    line-height: 34px;
+    position: relative;
+}
+.headBar ul li:after{
+    content: '';
+    position: absolute;
+    top:12px;right: 0;
+    width: 1px;
+    height: 10px;
+    background: #2f2f2f;
+}
+.headBar ul li:last-child:after{
+    background:none;
+}
+.mainNav{
+    width: 100%;
+    padding: 0 140px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1b1b1b;
+}
+.mainNav h1 img{
+    cursor: pointer;
+    width: 111px;
+}
+.mainNav__category{
+    width:690px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: none;
+    z-index: 98;
+    margin-left: 35px;
+}
+.mainNav__category li{
+    color: #fefefe;
+    opacity: 0.6;
+    font-size: 1.15rem;
+    cursor: pointer;
+    position: relative;
+    margin: 0 18px;
+    line-height: 75px;
+}
+.mainNav__category li:hover{
+    opacity: 1;
+}
+.mainNav__category li.clicked{
+    opacity: 1;
+}
+.mainNav__searchBtn{
+    background: none;
+    outline-style: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.mainNav__searchBtn img{
+    width: 33px;
+}
+.mainNav__searchBtn span{
+    color: #fefefe;
+    opacity: 0.6;
+    font-size: 1rem;
+}
+.mainNav__catBtn{
+    background: none;
+    outline-style: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.mainNav__catBtn img{
+    width: 33px;
+    opacity: 0.6;
+}
+.mainNav__catBtn:hover img{
+    opacity: 1;
+}
+.mainNav__catBtn span{
+    color: #fefefe;
+    opacity: 0.6;
+    font-size: 1rem;
+}
+.mainNav__catBtn:hover span{
+    opacity: 1;
+}

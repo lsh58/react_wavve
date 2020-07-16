@@ -1,33 +1,34 @@
 import React from 'react';
+import Main01 from './Main01';
 
 function MainContents({page}){
+  
   switch(page)
   {
-    case '홈' :
+    case '01' :
     return (
-      <div className="MainContents">
-          <h2>HOME</h2>
-      </div>
+      <Main01>
+      </Main01>
     );
-    case '방송':
+    case '02':
       return (
         <div className="MainContents">
           <h2>방송</h2>
         </div>
       );
-    case 'LIVE':
+    case '03':
       return (
         <div className="MainContents">
           <h2>LIVE</h2>
         </div>
       );
-    case '영화':
+    case '04':
       return (
         <div className="MainContents">
           <h2>영화</h2>
         </div>
       );  
-    case '해외시리즈':
+    case '05':
       return (
         <div className="MainContents">
           <h2>해외시리즈</h2>
@@ -35,8 +36,8 @@ function MainContents({page}){
       ); 
     default :
       return (
-        <div className="MainContents">
-            <h2>HOME</h2>
+        <div className="HomeMain">
+
         </div>
       );
   }

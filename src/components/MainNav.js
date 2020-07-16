@@ -1,27 +1,33 @@
 import React from 'react';
+import logo from '.././logo.png';
+import searchImg from '../asset/icon/searchBtn.png';
+import catImg from '../asset/icon/catBtn.png';
 
-const MainNav = ({ mainEl, onMouseEnter, onClick}) => {
+const MainNav = ({ mainEl, onClick}) => {
   
     return (
-      <>
-      <ul className="mainNav" ref={mainEl}>
-        <li id="mainNav01" 
-        onMouseEnter={onMouseEnter} 
-        onClick={onClick}>홈</li>
-        <li id="mainNav02" 
-        onMouseEnter={onMouseEnter} 
-        onClick={onClick}>방송</li>
-        <li id="mainNav03" 
-        onMouseEnter={onMouseEnter} 
-        onClick={onClick}>LIVE</li>
-        <li id="mainNav04" 
-        onMouseEnter={onMouseEnter} 
-        onClick={onClick}>영화</li>
-        <li id="mainNav05" 
-        onMouseEnter={onMouseEnter} 
-        onClick={onClick}>해외시리즈</li>
-      </ul>
-      </>
+      <header>
+      <div className="headBar">
+        <ul>
+          <li>로그인</li>
+          <li>이용권</li>
+          <li>편성표</li>
+          <li>이벤트</li>
+        </ul>
+      </div>
+      <div className="mainNav">
+        <h1><img src={logo} alt="logo" onClick={onClick} data-num="01"></img></h1>
+        <ul className="mainNav__category" ref={mainEl}>
+          <li className="clicked" onClick={onClick} data-num="01">홈</li>
+          <li onClick={onClick} data-num="02">방송</li>
+          <li onClick={onClick} data-num="03">LIVE</li>
+          <li onClick={onClick} data-num="04">영화</li>
+          <li onClick={onClick} data-num="05">해외시리즈</li>
+        </ul>
+        <button className="mainNav__searchBtn"><img src={searchImg} alt="search"></img><span>검색하기</span></button>
+        <button className="mainNav__catBtn"><img src={catImg} alt="search"></img><span>카테고리 검색</span></button>
+      </div>
+      </header>
     );
 };
 
