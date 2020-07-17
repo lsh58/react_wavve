@@ -14,14 +14,17 @@ header{
     background: #1b1b1b;
     border-bottom: 1px solid rgba(235,235,235,0.1);
 }
-.headBar ul{
+.headBar__wrapper{
+    width: 1240px;
+    margin: 0 auto;
+}
+.headBar__wrapper ul{
     height: 33px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 140px;
 }
-.headBar ul li{
+.headBar__wrapper ul li{
     color: #a5a5a5;
     font-size:12px;
     padding: 0 11px;
@@ -29,7 +32,7 @@ header{
     line-height: 34px;
     position: relative;
 }
-.headBar ul li:after{
+.headBar__wrapper ul li:after{
     content: '';
     position: absolute;
     top:12px;right: 0;
@@ -37,17 +40,20 @@ header{
     height: 10px;
     background: #2f2f2f;
 }
-.headBar ul li:last-child:after{
+.headBar__wrapper ul li:last-child:after{
     background:none;
 }
 .mainNav{
     width: 100%;
-    padding: 0 140px;
     height: 70px;
+    background: #1b1b1b;
+}
+.mainNav__wrapper{
+    width: 1240px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #1b1b1b;
 }
 .mainNav h1 img{
     cursor: pointer;
@@ -115,4 +121,16 @@ header{
 }
 .mainNav__catBtn:hover span{
     opacity: 1;
+}
+
+.MainContents{
+    width: 100%;
+    height: 3000px;
+    background: #1b1b1b;
+}
+.MainContents h2{
+    padding-top: 300px;
+    text-align: center;
+    font-size: 2rem;
+    color: #fefefe;
 }

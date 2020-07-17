@@ -5,33 +5,38 @@
     padding-top: 108px;
 }
 .HomeMain__mainSlide{
-    height: 580px;
-    width: 100%;
+    height: 530px;
+    min-width: 1240px;
+    max-width: 2340px;
+    margin: 0 auto 30px;
     background: #1b1b1b;
     position: relative;
     overflow: hidden;
 }
-.HomeMain__mainSlide ul{
+.HomeMain__mainSlide__slideWrapper{
+    width: 100%;
     position: absolute;
-    width: 500%;
-    left:-75%;
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     z-index: 10;
     transition: .35s;
 }
-.HomeMain__mainSlide ul li{
-    width:760px;
-    height:480px;
+.HomeMain__mainSlide__slideWrapper li{
+    width:33%;
+    min-width: 760px;
     background: #fefefe;
     margin-right: 30px;
     position: relative;
+    flex-shrink: 0;
 }
-.HomeMain__mainSlide ul li img{
+.HomeMain__mainSlide__slideWrapper li img{
     position: absolute;
     top: 0;
     left:50%;
     transform: translateX(-50%);
-    height: 100%;
+    height: 480px;
     width: 100%;
 }
 .HomeMain__mainSlide .prevBtn{
@@ -63,4 +68,39 @@
 }
 .HomeMain__mainSlide .nextBtn:hover{
     filter: none;
+}
+.HomeMain__mainSlide__indicator{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 53%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.HomeMain__mainSlide__indicator .controlBtn.play{
+    width: 30px;
+    height: 30px;
+    outline-style: none;
+    border: none;
+    cursor: pointer;
+    background: url('../asset/icon/play.png') no-repeat center / cover;
+}
+.HomeMain__mainSlide__indicator .controlBtn.stop{
+    width: 30px;
+    height: 30px;
+    outline-style: none;
+    border: none;
+    cursor: pointer;
+    background: url('../asset/icon/stop.png') no-repeat center / cover;
+}
+.HomeMain__mainSlide__indicator span{
+    width: 10px;
+    height: 10px;
+    background: #333333;
+    border-radius: 100%;
+    margin:0 3px;
+    cursor: pointer;
 }
