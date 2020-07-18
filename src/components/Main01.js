@@ -88,6 +88,38 @@ const Main01 = () => {
        }
     }
 
+    const onindicatorclick = e =>{
+      var move = indicatorNum-parseInt(e.target.dataset.num);
+      indicator.current.children[indicatorNum].classList.remove("active")
+      indicatorNum -= indicatorNum-parseInt(e.target.dataset.num);
+      indicator.current.children[indicatorNum].classList.add("active")
+      if(move>0){
+        for(var i=0;i<Math.abs(move); i++){
+          slideWrapper.current.prepend(slideWrapper.current.lastChild);
+          }
+          slideWrapper.current.style.transition="all 0s ease 0s";
+          slideWrapper.current.style.left=(originLeft-(760*Math.abs(move)))+"px";
+          originLeft-=(760*Math.abs(move));
+          setTimeout(function(){
+              slideWrapper.current.style.transition="all 0.35s ease 0s";
+              slideWrapper.current.style.left=(originLeft+(760*Math.abs(move)))+"px";
+              originLeft+=(760*Math.abs(move));
+          },10);
+      }
+      else{
+        for(var j=0;j<Math.abs(move); j++){
+        slideWrapper.current.append(slideWrapper.current.firstChild);
+        }
+        slideWrapper.current.style.transition="all 0s ease 0s";
+        slideWrapper.current.style.left=(originLeft+(760*Math.abs(move)))+"px";
+        originLeft+=(760*Math.abs(move));
+        setTimeout(function(){
+            slideWrapper.current.style.transition="all 0.35s ease 0s";
+            slideWrapper.current.style.left=(originLeft-(760*Math.abs(move)))+"px";
+            originLeft-=(760*Math.abs(move));
+        },10);
+      }
+    }
 
     return (
       <div className="HomeMain">
@@ -105,14 +137,17 @@ const Main01 = () => {
           <button className="nextBtn" onClick={onrightclick}></button>
           <div className="HomeMain__mainSlide__indicator" ref={indicator}>
             <button className="controlBtn play" onClick={onplaystop} ref={ctrlBtn}></button>
-            <span className="active"></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <span data-num="1" className="active" onClick={onindicatorclick}></span>
+            <span data-num="2" onClick={onindicatorclick}></span>
+            <span data-num="3" onClick={onindicatorclick}></span>
+            <span data-num="4" onClick={onindicatorclick}></span>
+            <span data-num="5" onClick={onindicatorclick}></span>
+            <span data-num="6" onClick={onindicatorclick}></span>
+            <span data-num="7" onClick={onindicatorclick}></span>
           </div>
+        </div>
+        <div className="HomeMain__bannerBar">
+          <a href="/"></a>
         </div>
       </div>
     );

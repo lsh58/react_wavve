@@ -8,7 +8,7 @@
     height: 530px;
     min-width: 1240px;
     max-width: 2340px;
-    margin: 0 auto 30px;
+    margin: 0 auto 50px;
     background: #1b1b1b;
     position: relative;
     overflow: hidden;
@@ -86,7 +86,7 @@
     outline-style: none;
     border: none;
     cursor: pointer;
-    background: url('../asset/icon/play.png') no-repeat center / cover;
+    background: url('../asset/icon/stop.png') no-repeat center / cover;
 }
 .HomeMain__mainSlide__indicator .controlBtn.stop{
     width: 30px;
@@ -94,7 +94,7 @@
     outline-style: none;
     border: none;
     cursor: pointer;
-    background: url('../asset/icon/stop.png') no-repeat center / cover;
+    background: url('../asset/icon/play.png') no-repeat center / cover;
 }
 .HomeMain__mainSlide__indicator span{
     width: 10px;
@@ -106,4 +106,16 @@
 }
 .HomeMain__mainSlide__indicator span.active{
     background: #1351f9;
+}
+.HomeMain__bannerBar{
+    width: 100%;
+    height: 96px;
+    margin: 0 auto 80px;
+    background: rgb(25, 36, 56);
+}
+.HomeMain__bannerBar a{
+    display: block;
+    width: 100%;
+    height: 96px;
+    background: url('../asset/image/banner.jpg')no-repeat center;
 }
