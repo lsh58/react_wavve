@@ -74,7 +74,7 @@
     height: 30px;
     position: absolute;
     bottom: 0;
-    left: 53%;
+    left: 50%;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
@@ -103,4 +103,7 @@
     border-radius: 100%;
     margin:0 3px;
     cursor: pointer;
+}
+.HomeMain__mainSlide__indicator span.active{
+    background: #1351f9;
 }

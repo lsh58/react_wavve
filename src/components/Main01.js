@@ -3,12 +3,16 @@ import '../asset/common.css';
 import '../asset/Main01.css';
 
 const Main01 = () => {
-    
+  
+  
     const slideWrapper = useRef(null);
-    
+    const ctrlBtn = useRef(null);
+    const indicator = useRef(null);
+
     var originLeft = 0;
     var bln =true;
-
+    var indicatorNum = 1;
+    
     const onleftclick = () =>{
         if(bln===true){
             bln=false;
@@ -24,6 +28,16 @@ const Main01 = () => {
             setTimeout(function(){
                 bln=true;
             },500);
+            if(indicatorNum>1){
+              indicator.current.children[indicatorNum].classList.remove("active")
+              indicator.current.children[indicatorNum-1].classList.add("active")
+              indicatorNum--;
+              }
+              else{
+                indicator.current.children[1].classList.remove("active")
+                indicator.current.children[7].classList.add("active")
+                indicatorNum =7;
+              }
       }
     }
 
@@ -42,19 +56,36 @@ const Main01 = () => {
             setTimeout(function(){
                 bln=true;
             },500);
+            if(indicatorNum<7){
+            indicator.current.children[indicatorNum].classList.remove("active")
+            indicator.current.children[indicatorNum+1].classList.add("active")
+            indicatorNum++;
+            }
+            else{
+              indicator.current.children[indicatorNum].classList.remove("active")
+              indicator.current.children[1].classList.add("active")
+              indicatorNum =1;
+            }
       }
     }
 
-    
-    const onplaystop = e => {
-      if(e.target.className==="controlBtn play"){
-        e.target.classList.remove("play");
-        e.target.classList.add("stop");
+    var slideInterval;
+    var slideAni = ()=> { slideInterval= setInterval((function(){
+      onrightclick();
+    }),3000);}
+
+    slideAni();
+
+    const onplaystop = () => {
+      if(ctrlBtn.current.className==="controlBtn play"){
+        ctrlBtn.current.classList.remove("play");
+        ctrlBtn.current.classList.add("stop");
+        clearInterval(slideInterval);
       }
       else{
-        e.target.classList.remove("stop");
-        e.target.classList.add("play");
-      }
+        ctrlBtn.current.classList.remove("stop");
+        ctrlBtn.current.classList.add("play");
+       }
     }
 
 
@@ -72,9 +103,9 @@ const Main01 = () => {
           </ul>
           <button className="prevBtn" onClick={onleftclick}></button>
           <button className="nextBtn" onClick={onrightclick}></button>
-          <div className="HomeMain__mainSlide__indicator">
-            <button className="controlBtn play" onClick={onplaystop}></button>
-            <span></span>
+          <div className="HomeMain__mainSlide__indicator" ref={indicator}>
+            <button className="controlBtn play" onClick={onplaystop} ref={ctrlBtn}></button>
+            <span className="active"></span>
             <span></span>
             <span></span>
             <span></span>
