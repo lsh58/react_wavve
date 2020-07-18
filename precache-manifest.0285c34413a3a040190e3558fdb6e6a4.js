@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f6754dd70a02db84ae9378dda2803ba4",
+    "revision": "495e982a10c9733e4ccfd81c58e1376c",
     "url": "/react_wavve/index.html"
   },
   {
-    "revision": "7bcd329e3db1063e8488",
-    "url": "/react_wavve/static/css/main.b4031dab.chunk.css"
+    "revision": "ba74f90c175425d3de12",
+    "url": "/react_wavve/static/css/main.5d41e908.chunk.css"
   },
   {
     "revision": "180ee49d314e897e5536",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react_wavve/static/js/2.4f40c51b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7bcd329e3db1063e8488",
-    "url": "/react_wavve/static/js/main.a4e6f83e.chunk.js"
+    "revision": "ba74f90c175425d3de12",
+    "url": "/react_wavve/static/js/main.e9c4ff04.chunk.js"
   },
   {
     "revision": "f61abe193d768978eb43",
@@ -50,5 +50,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "06564f6652f1ae330347e52c6300af63",
     "url": "/react_wavve/static/media/007.06564f66.jpg"
+  },
+  {
+    "revision": "26b68fd6dee2c5560aed66bfd7e95946",
+    "url": "/react_wavve/static/media/banner.26b68fd6.jpg"
   }
 ]);

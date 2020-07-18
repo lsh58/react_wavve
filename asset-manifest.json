@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react_wavve/static/css/main.b4031dab.chunk.css",
-    "main.js": "/react_wavve/static/js/main.a4e6f83e.chunk.js",
-    "main.js.map": "/react_wavve/static/js/main.a4e6f83e.chunk.js.map",
+    "main.css": "/react_wavve/static/css/main.5d41e908.chunk.css",
+    "main.js": "/react_wavve/static/js/main.e9c4ff04.chunk.js",
+    "main.js.map": "/react_wavve/static/js/main.e9c4ff04.chunk.js.map",
     "runtime-main.js": "/react_wavve/static/js/runtime-main.9fe88798.js",
     "runtime-main.js.map": "/react_wavve/static/js/runtime-main.9fe88798.js.map",
     "static/js/2.4f40c51b.chunk.js": "/react_wavve/static/js/2.4f40c51b.chunk.js",
     "static/js/2.4f40c51b.chunk.js.map": "/react_wavve/static/js/2.4f40c51b.chunk.js.map",
     "index.html": "/react_wavve/index.html",
-    "precache-manifest.78c4920788962e3c06d8bc942d4ab509.js": "/react_wavve/precache-manifest.78c4920788962e3c06d8bc942d4ab509.js",
+    "precache-manifest.0285c34413a3a040190e3558fdb6e6a4.js": "/react_wavve/precache-manifest.0285c34413a3a040190e3558fdb6e6a4.js",
     "service-worker.js": "/react_wavve/service-worker.js",
-    "static/css/main.b4031dab.chunk.css.map": "/react_wavve/static/css/main.b4031dab.chunk.css.map",
+    "static/css/main.5d41e908.chunk.css.map": "/react_wavve/static/css/main.5d41e908.chunk.css.map",
     "static/js/2.4f40c51b.chunk.js.LICENSE.txt": "/react_wavve/static/js/2.4f40c51b.chunk.js.LICENSE.txt",
     "static/media/001.jpg": "/react_wavve/static/media/001.8a0d317a.jpg",
     "static/media/002.jpg": "/react_wavve/static/media/002.4fd30f71.jpg",
@@ -18,12 +18,13 @@
     "static/media/004.jpg": "/react_wavve/static/media/004.47c73dba.jpg",
     "static/media/005.jpg": "/react_wavve/static/media/005.dd6e2601.jpg",
     "static/media/006.jpg": "/react_wavve/static/media/006.2f7a74fa.jpg",
-    "static/media/007.jpg": "/react_wavve/static/media/007.06564f66.jpg"
+    "static/media/007.jpg": "/react_wavve/static/media/007.06564f66.jpg",
+    "static/media/Main01.css": "/react_wavve/static/media/banner.26b68fd6.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.9fe88798.js",
     "static/js/2.4f40c51b.chunk.js",
-    "static/css/main.b4031dab.chunk.css",
-    "static/js/main.a4e6f83e.chunk.js"
+    "static/css/main.5d41e908.chunk.css",
+    "static/js/main.e9c4ff04.chunk.js"
   ]
 }
