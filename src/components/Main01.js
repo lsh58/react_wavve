@@ -85,10 +85,12 @@ const Main01 = () => {
       else{
         ctrlBtn.current.classList.remove("stop");
         ctrlBtn.current.classList.add("play");
-       }
+        slideAni();
+      }
     }
 
     const onindicatorclick = e =>{
+      clearInterval(slideInterval);
       var move = indicatorNum-parseInt(e.target.dataset.num);
       indicator.current.children[indicatorNum].classList.remove("active")
       indicatorNum -= indicatorNum-parseInt(e.target.dataset.num);
@@ -104,6 +106,7 @@ const Main01 = () => {
               slideWrapper.current.style.transition="all 0.35s ease 0s";
               slideWrapper.current.style.left=(originLeft+(760*Math.abs(move)))+"px";
               originLeft+=(760*Math.abs(move));
+              slideAni();
           },10);
       }
       else{
@@ -117,7 +120,8 @@ const Main01 = () => {
             slideWrapper.current.style.transition="all 0.35s ease 0s";
             slideWrapper.current.style.left=(originLeft-(760*Math.abs(move)))+"px";
             originLeft-=(760*Math.abs(move));
-        },10);
+            slideAni();
+          },10);
       }
     }
 
