@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react_wavve/static/css/main.5d41e908.chunk.css",
-    "main.js": "/react_wavve/static/js/main.9c459470.chunk.js",
-    "main.js.map": "/react_wavve/static/js/main.9c459470.chunk.js.map",
+    "main.css": "/react_wavve/static/css/main.2d8a5a5a.chunk.css",
+    "main.js": "/react_wavve/static/js/main.6cfe4495.chunk.js",
+    "main.js.map": "/react_wavve/static/js/main.6cfe4495.chunk.js.map",
     "runtime-main.js": "/react_wavve/static/js/runtime-main.9fe88798.js",
     "runtime-main.js.map": "/react_wavve/static/js/runtime-main.9fe88798.js.map",
     "static/js/2.4f40c51b.chunk.js": "/react_wavve/static/js/2.4f40c51b.chunk.js",
     "static/js/2.4f40c51b.chunk.js.map": "/react_wavve/static/js/2.4f40c51b.chunk.js.map",
     "index.html": "/react_wavve/index.html",
-    "precache-manifest.682234eb0768cf7fa2eedafad5c5595e.js": "/react_wavve/precache-manifest.682234eb0768cf7fa2eedafad5c5595e.js",
+    "precache-manifest.96296943cad57ceae6df201e5f956726.js": "/react_wavve/precache-manifest.96296943cad57ceae6df201e5f956726.js",
     "service-worker.js": "/react_wavve/service-worker.js",
-    "static/css/main.5d41e908.chunk.css.map": "/react_wavve/static/css/main.5d41e908.chunk.css.map",
+    "static/css/main.2d8a5a5a.chunk.css.map": "/react_wavve/static/css/main.2d8a5a5a.chunk.css.map",
     "static/js/2.4f40c51b.chunk.js.LICENSE.txt": "/react_wavve/static/js/2.4f40c51b.chunk.js.LICENSE.txt",
     "static/media/001.jpg": "/react_wavve/static/media/001.8a0d317a.jpg",
     "static/media/002.jpg": "/react_wavve/static/media/002.4fd30f71.jpg",
@@ -19,12 +19,32 @@
     "static/media/005.jpg": "/react_wavve/static/media/005.dd6e2601.jpg",
     "static/media/006.jpg": "/react_wavve/static/media/006.2f7a74fa.jpg",
     "static/media/007.jpg": "/react_wavve/static/media/007.06564f66.jpg",
-    "static/media/Main01.css": "/react_wavve/static/media/banner.26b68fd6.jpg"
+    "static/media/Main01.css": "/react_wavve/static/media/banner.26b68fd6.jpg",
+    "static/media/epi001.jpg": "/react_wavve/static/media/epi001.3b162c9c.jpg",
+    "static/media/epi002.jpg": "/react_wavve/static/media/epi002.91c9fb0d.jpg",
+    "static/media/epi003.jpg": "/react_wavve/static/media/epi003.e91eca67.jpg",
+    "static/media/epi004.jpg": "/react_wavve/static/media/epi004.3b63e3db.jpg",
+    "static/media/epi005.jpg": "/react_wavve/static/media/epi005.d032fe9f.jpg",
+    "static/media/epi006.jpg": "/react_wavve/static/media/epi006.e689af33.jpg",
+    "static/media/epi007.jpg": "/react_wavve/static/media/epi007.ad6b8bf3.jpg",
+    "static/media/epi008.jpg": "/react_wavve/static/media/epi008.9cc02ba9.jpg",
+    "static/media/epi009.jpg": "/react_wavve/static/media/epi009.ccf168f3.jpg",
+    "static/media/epi010.jpg": "/react_wavve/static/media/epi010.9409148d.jpg",
+    "static/media/epi011.jpg": "/react_wavve/static/media/epi011.c6a1be3c.jpg",
+    "static/media/epi012.jpg": "/react_wavve/static/media/epi012.4bc370bc.jpg",
+    "static/media/epi013.jpg": "/react_wavve/static/media/epi013.475d08f9.jpg",
+    "static/media/epi014.jpg": "/react_wavve/static/media/epi014.66fd4b07.jpg",
+    "static/media/epi015.jpg": "/react_wavve/static/media/epi015.697880d9.jpg",
+    "static/media/epi016.jpg": "/react_wavve/static/media/epi016.1156f937.jpg",
+    "static/media/epi017.jpg": "/react_wavve/static/media/epi017.57b22600.jpg",
+    "static/media/epi018.jpg": "/react_wavve/static/media/epi018.73713a1a.jpg",
+    "static/media/epi019.jpg": "/react_wavve/static/media/epi019.7158a613.jpg",
+    "static/media/epi020.jpg": "/react_wavve/static/media/epi020.4c1908c4.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.9fe88798.js",
     "static/js/2.4f40c51b.chunk.js",
-    "static/css/main.5d41e908.chunk.css",
-    "static/js/main.9c459470.chunk.js"
+    "static/css/main.2d8a5a5a.chunk.css",
+    "static/js/main.6cfe4495.chunk.js"
   ]
 }
