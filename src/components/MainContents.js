@@ -1,5 +1,5 @@
 import React from 'react';
-import Main01 from './Main01';
+import Main01 from './Main01/Main01';
 
 function MainContents({page}){
   

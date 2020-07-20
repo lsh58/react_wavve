@@ -1,11 +1,9 @@
 import React, {useRef} from 'react';
-import '../asset/common.css';
-import '../asset/Main01.css';
+import MainSlideList from './MainSlideList';
 
-const Main01 = () => {
-  
-  
-    const slideWrapper = useRef(null);
+const MainSlide = () => {
+
+    const mainSlideWrapper = useRef(null);
     const ctrlBtn = useRef(null);
     const indicator = useRef(null);
 
@@ -16,13 +14,13 @@ const Main01 = () => {
     const onleftclick = () =>{
         if(bln===true){
             bln=false;
-            slideWrapper.current.prepend(slideWrapper.current.lastChild);
-            slideWrapper.current.style.transition="all 0s ease 0s";
-            slideWrapper.current.style.left=(originLeft-760)+"px";
+            mainSlideWrapper.current.prepend(mainSlideWrapper.current.lastChild);
+            mainSlideWrapper.current.style.transition="all 0s ease 0s";
+            mainSlideWrapper.current.style.left=(originLeft-760)+"px";
             originLeft-=760;
             setTimeout(function(){
-                slideWrapper.current.style.transition="all 0.35s ease 0s";
-                slideWrapper.current.style.left=(originLeft+760)+"px";
+                mainSlideWrapper.current.style.transition="all 0.35s ease 0s";
+                mainSlideWrapper.current.style.left=(originLeft+760)+"px";
                 originLeft+=760;
             },10);
             setTimeout(function(){
@@ -44,13 +42,13 @@ const Main01 = () => {
     const onrightclick = () =>{
         if(bln===true){
             bln=false;
-            slideWrapper.current.append(slideWrapper.current.firstChild);
-            slideWrapper.current.style.transition="all 0s ease 0s";
-            slideWrapper.current.style.left=(originLeft+760)+"px";
+            mainSlideWrapper.current.append(mainSlideWrapper.current.firstChild);
+            mainSlideWrapper.current.style.transition="all 0s ease 0s";
+            mainSlideWrapper.current.style.left=(originLeft+760)+"px";
             originLeft+=760;
             setTimeout(function(){
-                slideWrapper.current.style.transition="all 0.35s ease 0s";
-                slideWrapper.current.style.left=(originLeft-760)+"px";
+                mainSlideWrapper.current.style.transition="all 0.35s ease 0s";
+                mainSlideWrapper.current.style.left=(originLeft-760)+"px";
                 originLeft-=760;
             },10);
             setTimeout(function(){
@@ -97,45 +95,50 @@ const Main01 = () => {
       indicator.current.children[indicatorNum].classList.add("active")
       if(move>0){
         for(var i=0;i<Math.abs(move); i++){
-          slideWrapper.current.prepend(slideWrapper.current.lastChild);
+          mainSlideWrapper.current.prepend(mainSlideWrapper.current.lastChild);
           }
-          slideWrapper.current.style.transition="all 0s ease 0s";
-          slideWrapper.current.style.left=(originLeft-(760*Math.abs(move)))+"px";
+          mainSlideWrapper.current.style.transition="all 0s ease 0s";
+          mainSlideWrapper.current.style.left=(originLeft-(760*Math.abs(move)))+"px";
           originLeft-=(760*Math.abs(move));
           setTimeout(function(){
-              slideWrapper.current.style.transition="all 0.35s ease 0s";
-              slideWrapper.current.style.left=(originLeft+(760*Math.abs(move)))+"px";
+              mainSlideWrapper.current.style.transition="all 0.35s ease 0s";
+              mainSlideWrapper.current.style.left=(originLeft+(760*Math.abs(move)))+"px";
               originLeft+=(760*Math.abs(move));
               slideAni();
           },10);
       }
       else{
         for(var j=0;j<Math.abs(move); j++){
-        slideWrapper.current.append(slideWrapper.current.firstChild);
+        mainSlideWrapper.current.append(mainSlideWrapper.current.firstChild);
         }
-        slideWrapper.current.style.transition="all 0s ease 0s";
-        slideWrapper.current.style.left=(originLeft+(760*Math.abs(move)))+"px";
+        mainSlideWrapper.current.style.transition="all 0s ease 0s";
+        mainSlideWrapper.current.style.left=(originLeft+(760*Math.abs(move)))+"px";
         originLeft+=(760*Math.abs(move));
         setTimeout(function(){
-            slideWrapper.current.style.transition="all 0.35s ease 0s";
-            slideWrapper.current.style.left=(originLeft-(760*Math.abs(move)))+"px";
+            mainSlideWrapper.current.style.transition="all 0.35s ease 0s";
+            mainSlideWrapper.current.style.left=(originLeft-(760*Math.abs(move)))+"px";
             originLeft-=(760*Math.abs(move));
             slideAni();
           },10);
       }
     }
 
+    const slideList = [
+      {id:1, src:require('../../asset/banner/001.jpg'), alt:'banner001'},
+      {id:2, src:require('../../asset/banner/002.jpg'), alt:'banner002'},
+      {id:3, src:require('../../asset/banner/003.jpg'), alt:'banner003'},
+      {id:4, src:require('../../asset/banner/004.jpg'), alt:'banner004'},
+      {id:5, src:require('../../asset/banner/005.jpg'), alt:'banner005'},
+      {id:6, src:require('../../asset/banner/006.jpg'), alt:'banner006'},
+      {id:7, src:require('../../asset/banner/007.jpg'), alt:'banner007'}
+    ];
+
     return (
-      <div className="HomeMain">
         <div className="HomeMain__mainSlide">
-          <ul className="HomeMain__mainSlide__slideWrapper" ref={slideWrapper}>
-            <li><img src={require('../asset/banner/001.jpg')} alt="banner001"></img></li>
-            <li><img src={require('../asset/banner/002.jpg')} alt="banner002"></img></li>
-            <li><img src={require('../asset/banner/003.jpg')} alt="banner003"></img></li>
-            <li><img src={require('../asset/banner/004.jpg')} alt="banner004"></img></li>
-            <li><img src={require('../asset/banner/005.jpg')} alt="banner005"></img></li>
-            <li><img src={require('../asset/banner/006.jpg')} alt="banner006"></img></li>
-            <li><img src={require('../asset/banner/007.jpg')} alt="banner007"></img></li>
+          <ul className="HomeMain__mainSlide__slideWrapper" ref={mainSlideWrapper}>
+            {slideList.map( v => {
+                return <MainSlideList key={v.id} src={v.src} alt={v.alt}/>;
+            })}
           </ul>
           <button className="prevBtn" onClick={onleftclick}></button>
           <button className="nextBtn" onClick={onrightclick}></button>
@@ -150,11 +153,7 @@ const Main01 = () => {
             <span data-num="7" onClick={onindicatorclick}></span>
           </div>
         </div>
-        <div className="HomeMain__bannerBar">
-          <a href="/"></a>
-        </div>
-      </div>
     );
 };
 
-export default Main01;
+export default MainSlide;
