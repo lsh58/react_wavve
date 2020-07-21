@@ -57,6 +57,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .mainNav h1 img{
     cursor: pointer;
@@ -109,6 +110,7 @@ header{
     display: flex;
     align-items: center;
     cursor: pointer;
+    height: 70px;
 }
 .mainNav__catBtn img{
     width: 33px;
@@ -135,5 +137,60 @@ header{
     padding-top: 300px;
     text-align: center;
     font-size: 2rem;
+    color: #fefefe;
+}
+.mainNav__categoryBox{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    min-width: 381px;
+    padding: 20px;
+    background: #101010;
+    transform: translateY(-1px);
+    display: flex;
+    transition: all .3s linear;
+    opacity: 0;
+    visibility: hidden;
+}
+.mainNav__categoryBox__title{
+    width: 100px;
+}
+.mainNav__categoryBox__title li{
+}
+.mainNav__categoryBox__title li a{
+    color: #a5a5a5;
+    line-height: 34px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.mainNav__categoryBox__title li a.selected{
+    color: #fefefe;
+}
+.mainNav__categoryBox__contents{
+    position: relative;
+}
+.mainNav__categoryBox__contents:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: #2f2f2f;
+}
+.mainNav__categoryBox__contents li{
+    width: 240px;
+}
+
+.mainNav__categoryBox__contents li ul li{
+    display: inline-block;
+    width: 100px;
+    margin-left: 20px;
+}
+.mainNav__categoryBox__contents li ul li a{
+    font-size: 14px;
+    line-height: 34px;
+    color: #a5a5a5;
+}
+.mainNav__categoryBox__contents li ul li a:hover{
     color: #fefefe;
 }
