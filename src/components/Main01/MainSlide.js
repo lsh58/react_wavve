@@ -31,11 +31,11 @@ const MainSlide = () => {
               indicator.current.children[indicatorNum-1].classList.add("active")
               indicatorNum--;
               }
-              else{
-                indicator.current.children[1].classList.remove("active")
-                indicator.current.children[7].classList.add("active")
-                indicatorNum =7;
-              }
+            else{
+              indicator.current.children[1].classList.remove("active")
+              indicator.current.children[7].classList.add("active")
+              indicatorNum =7;
+            }
       }
     }
 

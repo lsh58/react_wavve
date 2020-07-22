@@ -15,7 +15,7 @@
 }
 .HomeMain__mainSlide__slideWrapper{
     width: 100%;
-    position: absolute;
+    position: absolute; 
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -123,6 +123,7 @@
     margin: 0 auto;
     min-height: 327px;
     overflow: hidden;
+    position: relative;
 }
 .HomeMain__episode__top{
     display: flex;
@@ -163,6 +164,9 @@
 }
 .HomeMain__episode__slidewrapper{
     display: flex;
+    position: absolute;
+    left: 0;
+    transition: .3s;
 }
 .HomeMain__episode__slidewrapper .thumbnail{
     width: 240px;
@@ -188,4 +192,33 @@
     color:#a5a5a5;
     font-size: 16px;
     line-height: 24px;
+}
+.HomeMain__episode__prevBtn{
+    border: none;
+    outline-style: none;
+    background: url('../asset/icon/arrow-episode-left.png') no-repeat;
+    position: absolute;
+    left: -30px;
+    top: 72px;
+    transform: translateY(50%);
+    width: 30px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.HomeMain__episode__nextBtn{
+    border: none;
+    outline-style: none;
+    background: url('../asset/icon/arrow-episode-right.png') no-repeat;
+    position: absolute;
+    right: -30px;
+    top: 72px;
+    transform: translateY(50%);
+    width: 30px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.HomeMain__recommend{
+    
 }

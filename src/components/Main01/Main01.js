@@ -13,7 +13,13 @@ const Main01 = () => {
           <a href="/"></a>
         </div>
         <EpisodeSlide></EpisodeSlide>
-       
+        <div className="HomeMain__recommend">
+          <div className="HomeMain__recommend__wrapper">
+            <div className="HomeMain__episode__title">
+              <h2>추천 메뉴</h2>
+            </div>
+          </div>
+        </div>
       </div>
     );
 };

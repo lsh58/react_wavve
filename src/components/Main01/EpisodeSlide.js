@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import EpisodeSlideList from './EpisodeSlideList';
 
 const EpisodeSlide = () => {
@@ -26,6 +26,98 @@ const EpisodeSlide = () => {
     {id:20, src:require('../../asset/episode/epi020.jpg'), alt:'epi020', title:'미운 우리 새끼', date:'199회 2020-07-19(일)'},
   ];
 
+  var originLeft = 0;
+  var bln =true;
+  var indicatorNum = 1;
+
+  const prevBtn = useRef(null);
+  const nextBtn = useRef(null);
+  const epiSlide = useRef(null);
+  const indicator = useRef(null);
+
+  const onmouseenter = () =>{
+    prevBtn.current.style.left="1px"
+    nextBtn.current.style.right="1px"
+    if(originLeft===0){
+      prevBtn.current.style.opacity="0.3";
+      prevBtn.current.style.cursor="auto";
+    }else{
+      prevBtn.current.style.opacity="1";
+      prevBtn.current.style.cursor="pointer";
+    }
+    if(originLeft===-3750){
+      nextBtn.current.style.opacity="0.3";
+      nextBtn.current.style.cursor="pointer";
+    }else{
+      nextBtn.current.style.opacity="1";
+      nextBtn.current.style.cursor="pointer";
+    }
+  }
+  
+  const onmouseleave = () =>{
+    prevBtn.current.style.left="-30px"
+    nextBtn.current.style.right="-30px"
+    prevBtn.current.style.opacity="1";
+    nextBtn.current.style.opacity="1";
+  }
+
+  const onleftclick = () =>{
+    if(bln===true&&originLeft!==0){
+        bln=false;
+        epiSlide.current.style.left=(originLeft+1250)+"px";
+        originLeft+=1250;
+        if(originLeft===0){
+          prevBtn.current.style.opacity="0.3";
+          prevBtn.current.style.cursor="auto";
+        }else{
+          prevBtn.current.style.opacity="1";
+          prevBtn.current.style.cursor="pointer";
+        }
+        indicator.current.children[indicatorNum-1].classList.remove("active")
+        indicator.current.children[indicatorNum-2].classList.add("active")
+        indicatorNum--;
+        setTimeout(function(){
+          bln=true;
+      },500);
+    }
+  }
+
+  const onrightclick = () =>{
+    if(bln===true&&originLeft!==-3750){
+        bln=false;
+        epiSlide.current.style.left=(originLeft-1250)+"px";
+        originLeft-=1250;
+        if(originLeft===-3750){
+          nextBtn.current.style.opacity="0.3";
+          nextBtn.current.style.cursor="auto";
+        }else{
+          nextBtn.current.style.opacity="1";
+          nextBtn.current.style.cursor="pointer";
+        }
+        indicator.current.children[indicatorNum-1].classList.remove("active")
+        indicator.current.children[indicatorNum].classList.add("active")
+        indicatorNum++;
+        setTimeout(function(){
+          bln=true;
+        },500);
+    }
+  }
+
+  const onindicatorclick = e =>{
+    var move = indicatorNum-parseInt(e.target.dataset.num);
+    indicator.current.children[indicatorNum-1].classList.remove("active")
+    indicatorNum -= indicatorNum-parseInt(e.target.dataset.num);
+    indicator.current.children[indicatorNum-1].classList.add("active")
+    if(move>0){
+      epiSlide.current.style.left=(originLeft+(1250*Math.abs(move)))+"px";
+      originLeft+=(1250*Math.abs(move));
+    }
+    else{
+      epiSlide.current.style.left=(originLeft-(1250*Math.abs(move)))+"px";
+      originLeft-=(1250*Math.abs(move));
+    }
+  }
+
     return (
         <div className="HomeMain__episode">
         <div className="HomeMain__episode__wrapper">
@@ -34,18 +126,36 @@ const EpisodeSlide = () => {
               <h2>인기 에피소드</h2>
               <a href="/">더보기</a>
             </div>
-            <div className="HomeMain__episode__indicator">
-              <span data-num="1" className="active"></span>
-              <span data-num="2"></span>
-              <span data-num="3"></span>
-              <span data-num="4"></span>
+            <div className="HomeMain__episode__indicator" ref={indicator}>
+              <span data-num="1" className="active" onClick={onindicatorclick}></span>
+              <span data-num="2" onClick={onindicatorclick}></span>
+              <span data-num="3" onClick={onindicatorclick}></span>
+              <span data-num="4" onClick={onindicatorclick}></span>
             </div>
           </div>
-          <ul className="HomeMain__episode__slidewrapper">
+          <ul 
+          className="HomeMain__episode__slidewrapper" 
+          ref={epiSlide} 
+          onMouseEnter={onmouseenter} 
+          onMouseLeave={onmouseleave}>
             {episodeList.map( v => {
                 return <EpisodeSlideList key={v.id} src={v.src} alt={v.alt} title={v.title} date={v.date}/>;
             })}
           </ul>
+          <button
+          className="HomeMain__episode__prevBtn"
+          ref={prevBtn}
+          onMouseEnter={onmouseenter}
+          onMouseLeave={onmouseleave}
+          onClick={onleftclick}
+          ></button>
+          <button
+          className="HomeMain__episode__nextBtn"
+          ref={nextBtn}
+          onMouseEnter={onmouseenter}
+          onMouseLeave={onmouseleave}
+          onClick={onrightclick}
+          ></button>
         </div>
       </div>
     );

@@ -1,19 +1,34 @@
-import React, {useRef} from 'react';
+import React, {useState, useRef} from 'react';
 import logo from '.././logo.png';
 import searchImg from '../asset/icon/searchBtn.png';
 import catImg from '../asset/icon/catBtn.png';
+import MainNavCat from './MainNavCat';
 
 const MainNav = ({ mainEl, onClick}) => {
   
+    const [catIndex, setCatIndex] = useState('VOD');
+
     const category = useRef(null);
+    const catTitle = useRef(null);
 
     const onmouseenter = () =>{
+      category.current.style.top="100%"
       category.current.style.visibility="visible"
       category.current.style.opacity="1"
     }
     const onmouseleave = () =>{
+      category.current.style.top="90%"
       category.current.style.visibility="hidden"
       category.current.style.opacity="0"
+    }
+
+    const onclick = e => {
+      e.preventDefault();
+      setCatIndex(e.target.innerHTML);
+      for(var i=0; i<catTitle.current.children.length; i++){
+        catTitle.current.children[i].children[0].classList.remove('selected');
+      }
+      e.target.classList.add('selected')
     }
 
     return (
@@ -52,26 +67,13 @@ const MainNav = ({ mainEl, onClick}) => {
             ref={category}
             onMouseEnter={onmouseenter}
             onMouseLeave={onmouseleave}>
-              <ul className="mainNav__categoryBox__title">
+              <ul className="mainNav__categoryBox__title" onClick={onclick} ref={catTitle}>
                 <li><a href="/" className="selected">VOD</a></li>
                 <li><a href="/">영화</a></li>
                 <li><a href="/">영화 플러스</a></li>
               </ul>
               <ul className="mainNav__categoryBox__contents">
-                <li>
-                  <ul>
-                    <li><a href="/">예능</a></li>
-                    <li><a href="/">시사교양</a></li>
-                    <li><a href="/">애니메이션</a></li>
-                    <li><a href="/">스포츠</a></li>
-                    <li><a href="/">드라마</a></li>
-                    <li><a href="/">해외시리즈</a></li>
-                    <li><a href="/">키즈</a></li>
-                    <li><a href="/">크리에이터</a></li>
-                  </ul>
-                </li>
-                <li></li>
-                <li></li>
+                <MainNavCat catIndex={catIndex}></MainNavCat>
               </ul>
             </div>
           </div>

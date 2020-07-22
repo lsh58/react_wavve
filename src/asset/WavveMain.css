@@ -142,7 +142,7 @@ header{
 .mainNav__categoryBox{
     position: absolute;
     right: 0;
-    top: 100%;
+    top: 90%;
     min-width: 381px;
     padding: 20px;
     background: #101010;
@@ -154,8 +154,6 @@ header{
 }
 .mainNav__categoryBox__title{
     width: 100px;
-}
-.mainNav__categoryBox__title li{
 }
 .mainNav__categoryBox__title li a{
     color: #a5a5a5;
@@ -180,7 +178,6 @@ header{
 .mainNav__categoryBox__contents li{
     width: 240px;
 }
-
 .mainNav__categoryBox__contents li ul li{
     display: inline-block;
     width: 100px;
