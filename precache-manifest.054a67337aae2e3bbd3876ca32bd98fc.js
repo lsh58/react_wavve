@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "299330a18330917cb691f4ee394979f6",
+    "revision": "c12d30177f2a5308a516804e3e2e469a",
     "url": "/react_wavve/index.html"
   },
   {
-    "revision": "256c9868d09e26b54fed",
-    "url": "/react_wavve/static/css/main.6c09b19d.chunk.css"
+    "revision": "4ae5cd66fb4f6eeb1dc0",
+    "url": "/react_wavve/static/css/main.f0472bd2.chunk.css"
   },
   {
-    "revision": "ab177ce425f55cb2fcd4",
-    "url": "/react_wavve/static/js/2.d1bf5b3e.chunk.js"
+    "revision": "c0b1cc9ac67c4ec70c74",
+    "url": "/react_wavve/static/js/2.81c9353f.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/react_wavve/static/js/2.d1bf5b3e.chunk.js.LICENSE.txt"
+    "url": "/react_wavve/static/js/2.81c9353f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "256c9868d09e26b54fed",
-    "url": "/react_wavve/static/js/main.028f7afd.chunk.js"
+    "revision": "4ae5cd66fb4f6eeb1dc0",
+    "url": "/react_wavve/static/js/main.bb201baf.chunk.js"
   },
   {
-    "revision": "f61abe193d768978eb43",
-    "url": "/react_wavve/static/js/runtime-main.9fe88798.js"
+    "revision": "e0f48242c5762f92df3c",
+    "url": "/react_wavve/static/js/runtime-main.b6ad0d61.js"
   },
   {
     "revision": "8a0d317a3c14e5824ad6075f62729fcc",
@@ -134,5 +134,85 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4c1908c443b4ce6c850cfe2a43821492",
     "url": "/react_wavve/static/media/epi020.4c1908c4.jpg"
+  },
+  {
+    "revision": "fa5aaf6789263b3b0c78d5aa4c3b9ee4",
+    "url": "/react_wavve/static/media/wvmv001.fa5aaf67.jpg"
+  },
+  {
+    "revision": "2280347d7deb269f08e71303b0926f46",
+    "url": "/react_wavve/static/media/wvmv002.2280347d.jpg"
+  },
+  {
+    "revision": "0b68786235c1cdb4e1aebc8cb4149fda",
+    "url": "/react_wavve/static/media/wvmv003.0b687862.jpg"
+  },
+  {
+    "revision": "b3f7f9fa784d0a8d2d8082d4b33c257e",
+    "url": "/react_wavve/static/media/wvmv004.b3f7f9fa.jpg"
+  },
+  {
+    "revision": "e6ce5f1d6c78a0970e32c3911a766cd1",
+    "url": "/react_wavve/static/media/wvmv005.e6ce5f1d.jpg"
+  },
+  {
+    "revision": "1aeddbb3f0eeef9cae7d3d49374a802f",
+    "url": "/react_wavve/static/media/wvmv006.1aeddbb3.jpg"
+  },
+  {
+    "revision": "9a7ec332d1aad79f01efe7dc3a3d8a21",
+    "url": "/react_wavve/static/media/wvmv007.9a7ec332.jpg"
+  },
+  {
+    "revision": "1efff53797eb145faef9ed52eaf806cc",
+    "url": "/react_wavve/static/media/wvmv008.1efff537.jpg"
+  },
+  {
+    "revision": "9ae8c7f314e735ebfec7d869bd10ad84",
+    "url": "/react_wavve/static/media/wvmv009.9ae8c7f3.jpg"
+  },
+  {
+    "revision": "55133aa92f73e084e40ae8dabcefc71a",
+    "url": "/react_wavve/static/media/wvmv010.55133aa9.jpg"
+  },
+  {
+    "revision": "c4427b14053faee9ffdc66e26c16e9a2",
+    "url": "/react_wavve/static/media/wvmv011.c4427b14.jpg"
+  },
+  {
+    "revision": "0b2f1a3cae1fab69597a74352cd72e56",
+    "url": "/react_wavve/static/media/wvmv012.0b2f1a3c.jpg"
+  },
+  {
+    "revision": "2d9c2314383a21c6a4214357c7cbb3be",
+    "url": "/react_wavve/static/media/wvmv013.2d9c2314.jpg"
+  },
+  {
+    "revision": "07dd47c1719d1ecfb6796b4d6d61c62f",
+    "url": "/react_wavve/static/media/wvmv014.07dd47c1.jpg"
+  },
+  {
+    "revision": "78bf2002d5145ef6f8baab5b6e430756",
+    "url": "/react_wavve/static/media/wvmv015.78bf2002.jpg"
+  },
+  {
+    "revision": "19a9e43b9bd5f4c3c409d1af1b1f0aea",
+    "url": "/react_wavve/static/media/wvmv016.19a9e43b.jpg"
+  },
+  {
+    "revision": "3608009fb948210c53c8d044e86b47de",
+    "url": "/react_wavve/static/media/wvmv017.3608009f.jpg"
+  },
+  {
+    "revision": "c2f1c0f680ac610080ea620365a8ceab",
+    "url": "/react_wavve/static/media/wvmv018.c2f1c0f6.jpg"
+  },
+  {
+    "revision": "588627c7ed3904d07d9975f97bf97704",
+    "url": "/react_wavve/static/media/wvmv019.588627c7.jpg"
+  },
+  {
+    "revision": "111840f63a3fb83f099888eca15bf246",
+    "url": "/react_wavve/static/media/wvmv020.111840f6.jpg"
   }
 ]);
