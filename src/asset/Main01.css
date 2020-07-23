@@ -1,6 +1,5 @@
 .HomeMain{
     width: 100%;
-    min-height: 3000px;
     background: #1b1b1b;
     padding-top: 108px;
 }
@@ -112,16 +111,20 @@
     height: 96px;
     margin: 0 auto 80px;
     background: rgb(25, 36, 56);
+    display: flex;
+    justify-content: center;
 }
-.HomeMain__bannerBar a{
-    display: block;
+.HomeMain__bannerBar button{
+    border: none;
+    outline-style: none;
+    width: 1240px;
     height: 96px;
     background: url('../asset/image/banner.jpg')no-repeat center;
 }
 .HomeMain__episode__wrapper{
     width: 1240px;
     margin: 0 auto;
-    min-height: 327px;
+    min-height: 357px;
     overflow: hidden;
     position: relative;
 }
@@ -145,8 +148,14 @@
 .HomeMain__episode__title a{
     color: #a5a5a5;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
+    display: flex;
+    align-items: center;
+}
+.HomeMain__episode__title a span{
+    color: #a5a5a5;
+    font-size: 16px;
 }
 .HomeMain__episode__indicator{
     display: flex;
@@ -172,10 +181,18 @@
     width: 240px;
     height: 135px;
     margin-right: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .HomeMain__episode__slidewrapper .thumbnail img{
     width: 100%;
     border: 1px solid hsla(0,0%,65.9%,.15);
+    transition: .2s;
+}
+.HomeMain__episode__slidewrapper .thumbnail img:hover{
+    width: 105%;
 }
 .HomeMain__episode__slidewrapper .title{
     width: 240px;
@@ -219,6 +236,190 @@
     cursor: pointer;
     transition: 0.2s;
 }
-.HomeMain__recommend{
-    
+.HomeMain__episode__contents{
+    display: flex;
+}
+.HomeMain__episode__contents button{
+    border: none;
+    background: #252525;
+    outline-style: none;
+    cursor: pointer;
+    height: 80px;
+    margin-right: 10px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.HomeMain__episode__contents button:last-of-type{
+    margin-right: 0;
+}
+.HomeMain__episode__contents button img{
+    height: 36px;
+}
+.HomeMain__episode__contents button span{
+    margin-left: 12px;
+    color: #a5a5a5;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.HomeMain__recommend__wrapper{
+    width: 1240px;
+    margin: 0 auto 80px;
+    overflow: hidden;
+    position: relative;
+}
+.HomeMain__recommend__title{
+    margin-bottom: 20px;
+}
+.HomeMain__recommend__title h2{
+    color: #fefefe;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin-right: 10px;
+}
+
+.HomeMain__wavvie__wrapper{
+    width: 1240px;
+    margin: 0 auto;
+    min-height: 568px;
+    overflow: hidden;
+    position: relative;
+}
+.HomeMain__wavvie__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.HomeMain__wavvie__title{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: baseline;
+}
+.HomeMain__wavvie__title h2{
+    color: #fefefe;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin-right: 10px;
+}
+.HomeMain__wavvie__title a{
+    color: #a5a5a5;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+}
+.HomeMain__wavvie__title a span{
+    color: #a5a5a5;
+    font-size: 16px;
+}
+.HomeMain__wavvie__indicator{
+    display: flex;
+}
+.HomeMain__wavvie__indicator span{
+    width: 8px;
+    height: 8px;
+    background: #333333;
+    border-radius: 100%;
+    margin:0 3px;
+    cursor: pointer;
+}
+.HomeMain__wavvie__indicator span.active{
+    background: #1351f9;
+}
+.HomeMain__wavvie__slidewrapper{
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: .3s;
+}
+.HomeMain__wavvie__slidewrapper .thumbnail{
+    width: 240px;
+    height: 346px;
+    margin-right: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.HomeMain__wavvie__slidewrapper .thumbnail img{
+    width: 100%;
+    border: 1px solid hsla(0,0%,65.9%,.15);
+    transition: .2s;
+}
+.HomeMain__wavvie__slidewrapper .thumbnail img:hover{
+    width: 105%;
+}
+.HomeMain__wavvie__slidewrapper .title{
+    width: 240px;
+    background: #252525;
+    padding: 10px 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.HomeMain__wavvie__slidewrapper .title span{
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color:#a5a5a5;
+    font-size: 16px;
+    line-height: 24px;
+}
+.HomeMain__wavvie__prevBtn{
+    border: none;
+    outline-style: none;
+    background: url('../asset/icon/arrow-episode-left.png') no-repeat;
+    position: absolute;
+    left: -30px;
+    top: 178px;
+    transform: translateY(50%);
+    width: 30px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.HomeMain__wavvie__nextBtn{
+    border: none;
+    outline-style: none;
+    background: url('../asset/icon/arrow-episode-right.png') no-repeat;
+    position: absolute;
+    right: -30px;
+    top: 178px;
+    transform: translateY(50%);
+    width: 30px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.HomeMain__wavvie__contents{
+    display: flex;
+}
+.HomeMain__wavvie__contents button{
+    border: none;
+    background: #252525;
+    outline-style: none;
+    cursor: pointer;
+    height: 80px;
+    margin-right: 10px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.HomeMain__wavvie__contents button:last-of-type{
+    margin-right: 0;
+}
+.HomeMain__wavvie__contents button img{
+    height: 36px;
+}
+.HomeMain__wavvie__contents button span{
+    margin-left: 12px;
+    color: #a5a5a5;
+    font-size: 16px;
+    line-height: 24px;
 }

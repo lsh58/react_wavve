@@ -1,5 +1,6 @@
 import React, {useRef} from 'react';
 import EpisodeSlideList from './EpisodeSlideList';
+import {MdKeyboardArrowRight} from 'react-icons/md';
 
 const EpisodeSlide = () => {
     
@@ -124,7 +125,7 @@ const EpisodeSlide = () => {
           <div className="HomeMain__episode__top">
             <div className="HomeMain__episode__title">
               <h2>인기 에피소드</h2>
-              <a href="/">더보기</a>
+              <a href="/"><span>더보기</span><MdKeyboardArrowRight></MdKeyboardArrowRight></a>
             </div>
             <div className="HomeMain__episode__indicator" ref={indicator}>
               <span data-num="1" className="active" onClick={onindicatorclick}></span>

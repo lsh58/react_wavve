@@ -3,6 +3,8 @@ import '../../asset/common.css';
 import '../../asset/Main01.css';
 import MainSlide from './MainSlide';
 import EpisodeSlide from './EpisodeSlide';
+import Recommend from './Recommend';
+import WavvieMovie from './WavvieMovie'
 
 const Main01 = () => {
 
@@ -10,16 +12,11 @@ const Main01 = () => {
       <div className="HomeMain">
         <MainSlide></MainSlide>
         <div className="HomeMain__bannerBar">
-          <a href="/"></a>
+          <button></button>
         </div>
         <EpisodeSlide></EpisodeSlide>
-        <div className="HomeMain__recommend">
-          <div className="HomeMain__recommend__wrapper">
-            <div className="HomeMain__episode__title">
-              <h2>추천 메뉴</h2>
-            </div>
-          </div>
-        </div>
+        <Recommend></Recommend>
+        <WavvieMovie></WavvieMovie>
       </div>
     );
 };

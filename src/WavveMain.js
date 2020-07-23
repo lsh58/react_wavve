@@ -2,6 +2,7 @@ import React, {useState, useRef} from 'react';
 import Wrapper from './components/Wrapper';
 import MainContents from './components/MainContents';
 import MainNav from './components/MainNav';
+import Footer from './components/Footer';
 import './asset/common.css';
 import './asset/WavveMain.css';
 
@@ -27,6 +28,7 @@ const WavveMain = () => {
       <Wrapper>
          <MainNav mainEl={mainEl} onClick={onclick}/>
          <MainContents page={page}/>
+         <Footer></Footer>
       </Wrapper>
     );
 };
