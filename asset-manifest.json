@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react_wavve/static/css/main.f0472bd2.chunk.css",
-    "main.js": "/react_wavve/static/js/main.bb201baf.chunk.js",
-    "main.js.map": "/react_wavve/static/js/main.bb201baf.chunk.js.map",
+    "main.css": "/react_wavve/static/css/main.aae66ce4.chunk.css",
+    "main.js": "/react_wavve/static/js/main.4decaecf.chunk.js",
+    "main.js.map": "/react_wavve/static/js/main.4decaecf.chunk.js.map",
     "runtime-main.js": "/react_wavve/static/js/runtime-main.b6ad0d61.js",
     "runtime-main.js.map": "/react_wavve/static/js/runtime-main.b6ad0d61.js.map",
     "static/js/2.81c9353f.chunk.js": "/react_wavve/static/js/2.81c9353f.chunk.js",
     "static/js/2.81c9353f.chunk.js.map": "/react_wavve/static/js/2.81c9353f.chunk.js.map",
     "index.html": "/react_wavve/index.html",
-    "precache-manifest.054a67337aae2e3bbd3876ca32bd98fc.js": "/react_wavve/precache-manifest.054a67337aae2e3bbd3876ca32bd98fc.js",
+    "precache-manifest.c30f945f3f5fa3403e2f2121a69fd36d.js": "/react_wavve/precache-manifest.c30f945f3f5fa3403e2f2121a69fd36d.js",
     "service-worker.js": "/react_wavve/service-worker.js",
-    "static/css/main.f0472bd2.chunk.css.map": "/react_wavve/static/css/main.f0472bd2.chunk.css.map",
+    "static/css/main.aae66ce4.chunk.css.map": "/react_wavve/static/css/main.aae66ce4.chunk.css.map",
     "static/js/2.81c9353f.chunk.js.LICENSE.txt": "/react_wavve/static/js/2.81c9353f.chunk.js.LICENSE.txt",
     "static/media/001.jpg": "/react_wavve/static/media/001.8a0d317a.jpg",
     "static/media/002.jpg": "/react_wavve/static/media/002.4fd30f71.jpg",
@@ -19,7 +19,7 @@
     "static/media/005.jpg": "/react_wavve/static/media/005.dd6e2601.jpg",
     "static/media/006.jpg": "/react_wavve/static/media/006.2f7a74fa.jpg",
     "static/media/007.jpg": "/react_wavve/static/media/007.06564f66.jpg",
-    "static/media/Main01.css": "/react_wavve/static/media/banner.26b68fd6.jpg",
+    "static/media/Main01.scss": "/react_wavve/static/media/banner.26b68fd6.jpg",
     "static/media/epi001.jpg": "/react_wavve/static/media/epi001.3b162c9c.jpg",
     "static/media/epi002.jpg": "/react_wavve/static/media/epi002.91c9fb0d.jpg",
     "static/media/epi003.jpg": "/react_wavve/static/media/epi003.e91eca67.jpg",
@@ -64,7 +64,7 @@
   "entrypoints": [
     "static/js/runtime-main.b6ad0d61.js",
     "static/js/2.81c9353f.chunk.js",
-    "static/css/main.f0472bd2.chunk.css",
-    "static/js/main.bb201baf.chunk.js"
+    "static/css/main.aae66ce4.chunk.css",
+    "static/js/main.4decaecf.chunk.js"
   ]
 }
