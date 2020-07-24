@@ -4,7 +4,7 @@ import MainContents from './components/MainContents';
 import MainNav from './components/MainNav';
 import Footer from './components/Footer';
 import './asset/common.css';
-import './asset/WavveMain.css';
+import './asset/WavveMain.scss';
 
 
 const WavveMain = () => {

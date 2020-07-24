@@ -59,7 +59,7 @@ const MainNav = ({ mainEl, onClick}) => {
             </button>
             <button className="mainNav__catBtn"
             onMouseEnter={onmouseenter}
-            onMouseLeave={onmouseleave}>
+            onMouseLeave={onmouseleave}> 
             <img src={catImg} alt="search"></img>
             <span>카테고리 검색</span>
             </button>

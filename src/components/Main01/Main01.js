@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../asset/common.css';
-import '../../asset/Main01.css';
+import '../../asset/Main01.scss';
 import MainSlide from './MainSlide';
 import EpisodeSlide from './EpisodeSlide';
 import Recommend from './Recommend';
