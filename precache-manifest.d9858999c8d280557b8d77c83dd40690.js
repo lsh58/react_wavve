@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b89969051891a59268796ffe2a8beaa9",
+    "revision": "a7d7e4ebac726d41797398648ca2c0ed",
     "url": "/react_wavve/index.html"
   },
   {
-    "revision": "f1721432e6990aa3750b",
-    "url": "/react_wavve/static/css/main.aae66ce4.chunk.css"
+    "revision": "78913253f2ef40ebacb0",
+    "url": "/react_wavve/static/css/main.befea828.chunk.css"
   },
   {
     "revision": "c0b1cc9ac67c4ec70c74",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react_wavve/static/js/2.81c9353f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f1721432e6990aa3750b",
-    "url": "/react_wavve/static/js/main.4decaecf.chunk.js"
+    "revision": "78913253f2ef40ebacb0",
+    "url": "/react_wavve/static/js/main.a0fb5501.chunk.js"
   },
   {
     "revision": "e0f48242c5762f92df3c",
