@@ -1,7 +1,7 @@
 .HomeMain{
     width: 100%;
     background: #1b1b1b;
-    padding-top: 108px;
+    padding-top: 104px;
     &__mainSlide{
         height: 530px;
         min-width: 1240px;
@@ -108,7 +108,7 @@
     &__bannerBar{
         width: 100%;
         height: 96px;
-        margin: 0 auto 80px;
+        margin-bottom: 80px;
         background: rgb(25, 36, 56);
         display: flex;
         justify-content: center;
