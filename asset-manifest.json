@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react_wavve/static/css/main.befea828.chunk.css",
-    "main.js": "/react_wavve/static/js/main.a0fb5501.chunk.js",
-    "main.js.map": "/react_wavve/static/js/main.a0fb5501.chunk.js.map",
+    "main.css": "/react_wavve/static/css/main.a6d12cb3.chunk.css",
+    "main.js": "/react_wavve/static/js/main.07f4f67b.chunk.js",
+    "main.js.map": "/react_wavve/static/js/main.07f4f67b.chunk.js.map",
     "runtime-main.js": "/react_wavve/static/js/runtime-main.b6ad0d61.js",
     "runtime-main.js.map": "/react_wavve/static/js/runtime-main.b6ad0d61.js.map",
     "static/js/2.81c9353f.chunk.js": "/react_wavve/static/js/2.81c9353f.chunk.js",
     "static/js/2.81c9353f.chunk.js.map": "/react_wavve/static/js/2.81c9353f.chunk.js.map",
     "index.html": "/react_wavve/index.html",
-    "precache-manifest.d9858999c8d280557b8d77c83dd40690.js": "/react_wavve/precache-manifest.d9858999c8d280557b8d77c83dd40690.js",
+    "precache-manifest.90f5c26fab9690a45fa6c29acef8853f.js": "/react_wavve/precache-manifest.90f5c26fab9690a45fa6c29acef8853f.js",
     "service-worker.js": "/react_wavve/service-worker.js",
-    "static/css/main.befea828.chunk.css.map": "/react_wavve/static/css/main.befea828.chunk.css.map",
+    "static/css/main.a6d12cb3.chunk.css.map": "/react_wavve/static/css/main.a6d12cb3.chunk.css.map",
     "static/js/2.81c9353f.chunk.js.LICENSE.txt": "/react_wavve/static/js/2.81c9353f.chunk.js.LICENSE.txt",
     "static/media/001.jpg": "/react_wavve/static/media/001.8a0d317a.jpg",
     "static/media/002.jpg": "/react_wavve/static/media/002.4fd30f71.jpg",
@@ -64,7 +64,7 @@
   "entrypoints": [
     "static/js/runtime-main.b6ad0d61.js",
     "static/js/2.81c9353f.chunk.js",
-    "static/css/main.befea828.chunk.css",
-    "static/js/main.a0fb5501.chunk.js"
+    "static/css/main.a6d12cb3.chunk.css",
+    "static/js/main.07f4f67b.chunk.js"
   ]
 }
