@@ -3,7 +3,7 @@ import React from 'react';
 function Wrapper({children}){
   
     return (
-      <div className="mainWrapper">
+      <div id="top" className="mainWrapper">
         {children}
       </div>
     );

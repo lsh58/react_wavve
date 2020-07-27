@@ -12,6 +12,7 @@ const WavveMain = () => {
     const [page, setPage] = useState('01');
  
     const mainEl = useRef(null);
+    const topBtn = useRef(null);
  
     const onclick = e => {
        setPage(e.target.dataset.num);
@@ -23,12 +24,22 @@ const WavveMain = () => {
           }
        }
     }
-    
+
+   window.addEventListener('scroll', function(){
+      if(window.scrollY>=200){
+         topBtn.current.style.display="block"
+      }
+      else{
+         topBtn.current.style.display="none"
+      }
+   })
+
     return (
       <Wrapper>
          <MainNav mainEl={mainEl} onClick={onclick}/>
          <MainContents page={page}/>
          <Footer></Footer>
+         <a href="#top" className="top" ref={topBtn}><img src={require("./asset/icon/topBtn.png")} alt="top button"></img></a>
       </Wrapper>
     );
 };

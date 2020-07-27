@@ -43,9 +43,8 @@ const Footer = () => {
         }
     }
 
-    var slideInterval;
     
-    var slideAni = ()=> { slideInterval= setInterval((function(){
+    var slideAni = ()=> { setInterval((function(){
         onrightlick();
     }),3000);}
 
@@ -56,7 +55,7 @@ const Footer = () => {
             <div className="footer__notice">
                 <div className="footer__notice__wrapper">
                     <div className="footer__notice__frontWrapper">
-                        <sapn className="footer__notice__title">공지사항</sapn>
+                        <span className="footer__notice__title">공지사항</span>
                         <ul ref={noticeList}>
                             <li>명작관 &#62; CLASSIC 으로 리뉴얼 안내</li> 
                             <li>Wavve CLASSIC 시청왕 이벤트 안내</li> 
