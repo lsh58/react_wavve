@@ -1,4 +1,5 @@
 body{
+    width: 100%;
     background: #1b1b1b;
 }
 .mainWrapper{
@@ -203,13 +204,18 @@ header{
             display: flex;
             justify-content: space-between;
             overflow: hidden;
+            position: relative;
         }
         &__frontWrapper{
             display: flex;
             align-items: flex-start;
             & ul{
+                position: absolute;
+                top: 0;
+                left: 85px;
                 display: flex;
                 flex-direction: column;
+                transition: .35s;
                 & li{
                     height: 50px;
                     color: #a5a5a5;

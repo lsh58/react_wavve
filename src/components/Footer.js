@@ -5,10 +5,20 @@ const Footer = () => {
     const noticeList = useRef(null);
 
     var bln =true;
+    var originTop = 0;
 
     const onleftclick = () =>{
         if(bln===true){
             bln=false;
+            noticeList.current.prepend(noticeList.current.lastChild);
+            noticeList.current.style.transition="all 0s ease 0s";
+            noticeList.current.style.top=(originTop-50)+"px";
+            originTop-=50;
+            setTimeout(function(){
+                noticeList.current.style.transition="all 0.35s ease 0s";
+                noticeList.current.style.top=(originTop+50)+"px";
+                originTop+=50;
+            },10);
             setTimeout(function(){
                 bln=true;
             },500);
@@ -18,11 +28,28 @@ const Footer = () => {
     const onrightlick = () =>{
         if(bln===true){
             bln=false;
+            noticeList.current.append(noticeList.current.firstChild);
+            noticeList.current.style.transition="all 0s ease 0s";
+            noticeList.current.style.top=(originTop+50)+"px";
+            originTop+=50;
+            setTimeout(function(){
+                noticeList.current.style.transition="all 0.35s ease 0s";
+                noticeList.current.style.top=(originTop-50)+"px";
+                originTop-=50;
+            },10);
             setTimeout(function(){
                 bln=true;
             },500);
         }
     }
+
+    var slideInterval;
+    
+    var slideAni = ()=> { slideInterval= setInterval((function(){
+        onrightlick();
+    }),3000);}
+
+    slideAni();
 
     return (
         <div className="footer">
