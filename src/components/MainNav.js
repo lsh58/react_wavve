@@ -1,7 +1,4 @@
 import React, {useState, useRef} from 'react';
-import logo from '.././logo.png';
-import searchImg from '../asset/icon/searchBtn.png';
-import catImg from '../asset/icon/catBtn.png';
 import MainNavCat from './MainNavCat';
 
 const MainNav = ({ mainEl, onClick}) => {
@@ -45,7 +42,9 @@ const MainNav = ({ mainEl, onClick}) => {
         </div>
         <div className="mainNav">
           <div className="mainNav__wrapper">
-            <h1><img src={logo} alt="logo" onClick={onClick} data-num="01"></img></h1>
+            <h1>
+              <img src={require("../logo.png")} alt="logso" onClick={onClick} data-num="01"></img>
+            </h1>
             <ul className="mainNav__category" ref={mainEl}>
               <li className="clicked" onClick={onClick} data-num="01">홈</li>
               <li onClick={onClick} data-num="02">방송</li>
@@ -54,19 +53,19 @@ const MainNav = ({ mainEl, onClick}) => {
               <li onClick={onClick} data-num="05">해외시리즈</li>
             </ul>
             <button className="mainNav__searchBtn">
-            <img src={searchImg} alt="search"></img>
-            <span>검색하기</span>
+              <img src={require("../asset/icon/searchBtn.png")} alt="search"></img>
+              <span>검색하기</span>
             </button>
             <button className="mainNav__catBtn"
-            onMouseEnter={onmouseenter}
-            onMouseLeave={onmouseleave}> 
-            <img src={catImg} alt="search"></img>
-            <span>카테고리 검색</span>
+              onMouseEnter={onmouseenter}
+              onMouseLeave={onmouseleave}> 
+              <img src={require("../asset/icon/catBtn.png")} alt="search"></img>
+              <span>카테고리 검색</span>
             </button>
             <div className="mainNav__categoryBox"
-            ref={category}
-            onMouseEnter={onmouseenter}
-            onMouseLeave={onmouseleave}>
+              ref={category}
+              onMouseEnter={onmouseenter}
+              onMouseLeave={onmouseleave}>
               <ul className="mainNav__categoryBox__title" onClick={onclick} ref={catTitle}>
                 <li><a href="/" className="selected">VOD</a></li>
                 <li><a href="/">영화</a></li>
